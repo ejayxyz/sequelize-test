@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "mysql2": "^1.6.5",
+    "readline-sync": "^1.4.9",
     "sequelize": "^5.9.4",
     "table": "^5.4.1"
   }
