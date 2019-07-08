@@ -7,13 +7,13 @@ sequelize
   .authenticate()
   .then(() => {
     sequelize.query('select * from games').then(result => {
-      let row = result[0];
+      let n = result[0];
       let matrix = [];
-      for (let i = 0; i < row.length; i++) {
+      for (let i = 0; i < n.length; i++) {
         matrix.push([
-          row[i].id,
-          row[i].name,
-          row[i].description
+          n[i].id,
+          n[i].name,
+          n[i].description
         ]);
       }
       console.log(table(matrix));
